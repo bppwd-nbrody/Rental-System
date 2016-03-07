@@ -1,0 +1,17 @@
+<div class="header">
+    <div class="col-md-12">
+    	<div class="col-md-2"><%= image_tag("logo.jpg") %></div>
+        <div class="col-md-7">
+	        <ul class="nav nav-pills">
+	            <li><%= link_to "Home", "/" %></li>
+    			<li><%= link_to "Inventory", "/inventory/index" %></li>
+    		</ul>
+	    </div>    
+	    <div class="col-md-3">
+	        <ul class="nav nav-pills">
+	            <li><%= link_to "Sign In", "/admin/index" %></li>
+	            <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></li>
+    		</ul>
+	    </div>    
+    </div>	    
+</div>
